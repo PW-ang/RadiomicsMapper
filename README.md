@@ -16,7 +16,7 @@ Parameterized Configuration: YAML-based feature extraction parameter configurati
 
 Dynamic Binning: Customizable intensity binning parameters
 
-Multiple Modes: Pure features, histogram-only, or combined modes
+Multiple Modes: Pure maps, histogram-only, or combined modes
 
 # Pipeline
 Consisting of three main components:
@@ -59,5 +59,5 @@ Step 4: Execute Batch Processing
 --get_hist	Mode: 0=features, 1=histogram, 2=both
 --binWidth	Bin width for intensity discretization
 --binWidthupper	Upper intensity bound
---binWidthlower	Lower intensity bound```
+--binWidthlower	Lower intensity bound
 
