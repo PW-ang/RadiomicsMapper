@@ -18,6 +18,30 @@ Dynamic Binning: Customizable intensity binning parameters
 
 Multiple Modes: Pure maps, histogram-only, or combined modes
 
+# Requirements
+
+For better experience, you should create a conda environment.
+
+conda create -n pymap python=3.11.7
+
+Requires:
+
+  numpy==1.26.4
+
+  pandas
+
+  SimpleITK
+
+  matplotlib
+
+  six
+
+  tqdm 
+
+  PyYAML  
+
+  openpyxl
+
 # Pipeline
 Consisting of three main components:
 
@@ -60,4 +84,9 @@ Step 4: Execute Batch Processing
 --binWidth	Bin width for intensity discretization
 --binWidthupper	Upper intensity bound
 --binWidthlower	Lower intensity bound
+```
+# Acknowledge
 
+I would like to express my sincere gratitude to the FAE project (https://github.com/salan668/FAE) for their integrated radiomics feature calculation source code, which served as the foundation for this work.
+
+# Citation
