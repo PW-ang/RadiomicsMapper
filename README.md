@@ -80,7 +80,7 @@ Step 4: Execute Batch Processing
 --pad	Padding size for feature extraction
 --bin_path	Excel file with bin parameters
 --resume	Enable resume from previous execution
---get_hist	Mode: 0=features, 1=histogram, 2=both
+--get_hist	Mode: 0=cal maps, 1=get histogram, 2=both
 --binWidth	Bin width for intensity discretization
 --binWidthupper	Upper intensity bound
 --binWidthlower	Lower intensity bound
