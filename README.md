@@ -1,6 +1,6 @@
 # RadiomicsMapper
 
-An open-source Python toolkit that converts 3D medical images into comprehensive radiomics feature maps using sliding window techniques. Supports parallel processing, checkpoint resumption, and batch analysis for large-scale radiomics studies.
+An open-source Python toolkit that converts 2D/3D medical images into comprehensive radiomics feature maps using sliding window techniques. Supports parallel processing, checkpoint resumption, and batch analysis for large-scale radiomics studies.
 # Key Features
 🎯 Precise Feature Extraction
 
@@ -21,7 +21,7 @@ Multiple Modes: Pure maps, histogram-only, or combined modes
 # Pipeline
 Consisting of three main components:
 
-`task.py` - Batch processing manager with resume capability and parallel execution
+`batch_run.py` - Batch processing manager with resume capability and parallel execution
 
 `run.py` - Single-image feature extraction engine with optimized voxel-wise computation
 
@@ -36,7 +36,7 @@ Step 1: Calculate global min/max intensity across dataset
 
 Step 2: Prepare Bin Parameters
 
-Create `bin_parameters.xlsx`
+Create `bin.xlsx`
 
 Step 3: Configure Features
 
@@ -44,7 +44,7 @@ Edit `params.yaml` to enable desired feature classes and settings.
 
 Step 4: Execute Batch Processing
 
-`python task.py --data images/ --mask masks/ --output results/ --bin_path bin_parameters.xlsx`
+`python batch_run.py --data images/ --mask masks/ --output results/ --bin_path bin.xlsx`
 
 # Detailed Parameter Reference
 
